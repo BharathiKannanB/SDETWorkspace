@@ -2,9 +2,11 @@ package week1.arraysnotations;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.junit.Test;
 
@@ -120,12 +122,12 @@ public class MissingNumbersArray {
 	
 	
 	
-	/* Solution 2: Better Performance - Using Set*/
+	/* Solution 2: 'for' Loops - Using Set*/
 	
 	public void missingNumbersSolution2(int input[])
 	{
 		Arrays.sort(input);											 //O[N log N]
-	    Set<Integer> set = new HashSet<>();
+	    HashSet<Integer> set = new HashSet<>();
 
 	    for (int i = input[0]; i < input[input.length - 1]; i++) {   //O[N]
 	        set.add(i);
@@ -142,8 +144,13 @@ public class MissingNumbersArray {
 	    else
 	    System.out.print(set + " ");
 	}
-}
+	
 	// Solution 2 Performance  ->   O[N]+ O[N]+ O[N log N] -> O[N log N]
+	
+
+	
+}
+	
 	
 	
 

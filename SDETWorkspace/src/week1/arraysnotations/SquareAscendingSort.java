@@ -91,7 +91,7 @@ public class SquareAscendingSort {
 	{
 		int[] output = new int[input.length];    	 //O[1]
 		int temp=0;		
-		for(int value:input)					 	 //O[N]
+		for(int value:input)					 	 //O[N]    // for each triage
 		{
 			value = value*value;               
 			output[temp]=value;
