@@ -70,7 +70,7 @@ public class StringReverseWord_Problem3 {
 			reverseip=iparray[i].toCharArray();
 			for (int j = reverseip.length-1; j >=0 ; j--) {
 				// = new char[reverseip.length];
-				reverseop[k]=reverseip[j];
+			//	reverseop[k]=reverseip[j];
 				k++;
 			}
 			k=0;
